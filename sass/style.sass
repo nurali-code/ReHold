@@ -1,0 +1,94 @@
+@import 'normolize'
+@import 'fonts'
+@import 'elements'
+@import 'slick'
+@import 'header'
+
+main
+    min-height: 100vh
+
+    .heading
+        font-weight: 500
+        text-align: center
+        font-size: 18px
+        font-weight: 500
+        padding: 0
+        margin: 0 0 20px
+
+    .headline
+        margin: 24px 0
+        font-weight: 500
+        font-size: 32px
+
+    .subheading
+        display: block
+        margin: 0 0 18px
+        font-size: 22px
+        font-weight: 500
+
+.earnings
+    margin: 0 0 24px
+    span
+        display: block
+
+    i
+        font-style: normal
+        padding: 0 6px
+        min-width: 20px
+        display: inline-block
+        vertical-align: middle
+        background: var(--secondary-02)
+        border-radius: 50%
+        line-height: 18px
+        font-weight: 500
+    img
+        margin-right: 8px
+        display: inline-block
+        vertical-align: middle
+
+    &__heading
+        margin: 0 0 8px
+        color: var(--secondary-03)
+
+    .fx
+        align-items: flex-start
+
+    &-head
+        margin-right: auto
+        .earnings__heading
+            color: white
+
+        img
+            width: 26px
+            height: 26px
+            object-fit: contain
+
+    &-item
+        text-align: right
+        margin-left: 24px
+        img
+            width: 16px
+            height: 16px
+            object-fit: contain
+
+    @media screen and ( max-width: 400px )
+        .--hide
+            display: none
+
+.quest
+    padding: 10px 8px 10px 16px
+    margin: 0 0 24px
+    border-radius: 16px
+    border: 1px solid var(--secondary-02)
+    &__heading
+        display: block
+        margin: 0 0 2px
+
+    &__text
+        gap: 8px
+        justify-content: flex-start
+        color: var(--primary-01)
+
+    i
+        opacity: .7
+        font-style: normal

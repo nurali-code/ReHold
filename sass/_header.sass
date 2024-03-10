@@ -1,0 +1,115 @@
+.header
+    height: 65px
+    width: 100%
+    top: 0
+    left: 0
+    .logo
+        margin-right: 24px
+
+    .nav
+        position: absolute
+        top: 5px
+        left: 77px
+        display: inline-flex
+        z-index: 99999
+        &__link
+            font-size: 16px
+            padding: 16px
+            display: block
+            color: var(--gray-01)
+            &:hover
+                color: white
+
+        &.fixed
+            position: fixed
+
+    &-btn
+        height: 40px
+        padding-right: 12px
+        margin-left: 8px
+        border-radius: 40px
+        background: var(--background-01)
+        border-color: var(--secondary-02)
+        border-style: solid
+        border-width: 1px
+        color: white
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        gap: 8px
+        padding: 0 12px 0 0
+        i
+            font-style: normal
+
+        img
+            width: 36px
+            height: 36px
+
+        &.--cur
+            padding: 0 10px
+            img
+                width: 26px
+                height: 26px
+
+            @media screen and ( max-width: 1000px )
+                i
+                    display: none
+
+        &.--lang
+            width: 40px
+            padding: 0
+            img
+                width: 20px
+                height: 20px
+
+        &.--redy
+            text-transform: uppercase
+
+    .btn
+        margin-left: 10px
+
+    &-top
+        width: 100%
+        height: 65px
+        transition: .2s ease all
+        padding: 0 24px
+        z-index: 9999
+        &.fixed
+            position: fixed
+            backdrop-filter: blur(6px)
+            background: rgba(11, 9, 21, 0.9)
+            border-bottom: 1px solid var(--secondary-04)
+
+    @media screen and ( max-width: 770px )
+        &-top
+            padding: 0 12px
+
+        .nav
+            position: fixed
+            bottom: 18px
+            top: auto
+            left: 12px
+            box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 32px 0px
+            background: rgba(#20123f, .7)
+            backdrop-filter: blur(6px)
+            z-index: 9999
+            width: calc( 100% - 24px )
+            justify-content: flex-start
+            border-radius: 32px
+            gap: 8px
+            padding: 8px
+            &__link
+                border-radius: 40px
+                padding: 8px 12px
+                color: var(--secondary-03)
+                background: var(--background-01)
+
+    @media screen and ( max-width: 470px )
+        .logo
+            margin-right: auto
+        &-btn
+            i
+                display: none
+            &.--redy
+                padding: 0
+                margin-left: 0

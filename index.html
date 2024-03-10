@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Airdrop - ReHold</title>
+	<meta name="theme-color" content="#632bdc" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/icon">
+	<link rel="stylesheet" href="./fonts/stylesheet.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-top fx fixed">
+			<a href="./index.html" class="logo"><img src="img/logo.svg" alt="ig"></a>
+			<div class="header-col fx">
+				<button class="header-btn --redy">
+					<img src="img/redy.svg" alt="redy">
+					<i>redy</i>
+				</button>
+				<button class="header-btn --cur">
+					<img src="img/eth.svg" alt="redy">
+					<i>Ethereum</i>
+				</button>
+				<button class="header-btn --lang">
+					<img src="img/globe.svg" alt="redy">
+				</button>
+				<button class="btn md rd">
+					<span>Подключить <i>кошелек</i></span>
+				</button>
+			</div>
+		</div>
+		<nav class="nav fx fixed">
+			<a href="#" class="nav__link">Дуал</a>
+			<a href="#" class="nav__link">Обмен</a>
+			<a href="#" class="nav__link">Купить</a>
+		</nav>
+	</header>
+
+	<main>
+		<div class="container airdrop">
+			<h1 class="heading">Airdrop</h1>
+
+			<div class="earnings fx">
+				<div class="earnings-head">
+					<span class="earnings__heading">Всего заработано</span>
+					<span class="earnings__text">
+						<img src="img/redy.svg" alt="redy"> 0 redy
+					</span>
+				</div>
+				<div class="earnings-item">
+					<span class="earnings__heading">Дуалы</span>
+					<span class="earnings__text">
+						<i>0</i>
+					</span>
+				</div>
+				<div class="earnings-item --hide">
+					<span class="earnings__heading">Обмены</span>
+					<span class="earnings__text">
+						<i>0</i>
+					</span>
+				</div>
+				<div class="earnings-item">
+					<span class="earnings__heading">Рефералы</span>
+					<span class="earnings__text">
+						<img src="img/ref.svg" alt="ref">
+						<i>0</i>
+					</span>
+				</div>
+			</div>
+
+			<div class="quest fx">
+				<div class="col">
+					<span class="quest__heading">Ежедневный квест</span>
+					<span class="quest__text fx">
+						<img src="img/quest.svg" alt="quest"> 100 <i>REDY</i>
+					</span>
+				</div>
+				<button class="btn" disabled>Зачислить</button>
+			</div>
+			<button class="btn w100">Подключить кошелек</button>
+			<h2 class="headline">Приглашайте друзей и получайте <mark>30%</mark> от их REDY</h2>
+			<h3 class="subheading">Как это работает</h3>
+			<ul class="list">
+				<li>
+					<span class="list-icon fx"><img src="img/ic-1.svg" alt="ic"></span>
+					<span class="list__heading">Приветственный бонус</span>
+					<span class="list__tag">100 REDY</span>
+					<span class="list__text">Бонус будет применен после первого начисления для тех, кто присоединился к
+						ReHold по реферальной ссылке.</span>
+				</li>
+				<li>
+					<span class="list-icon fx"><img src="img/ic-2.svg" alt="ic"></span>
+					<span class="list__heading">Дуалы</span>
+					<span class="list__tag">20 REDY = $1</span>
+					<span class="list__text">Каждый вложенный доллар в Дуал равен 20 REDY. Вы можете включить
+						авто-повтор, чтобы фармить REDY без затрат на газ.</span>
+					<button class="btn sm">Открыть Дуал</button>
+				</li>
+				<li>
+					<span class="list-icon fx"><img src="img/ic-3.svg" alt="ic"></span>
+					<span class="list__heading">Обмен</span>
+					<span class="list__tag">20 REDY = $1</span>
+					<span class="list__text">Каждый обмененный доллар через Свопы равен 10 REDY. Вы можете использовать
+						дешевые блокчейны для эффективного фарминга REDY.</span>
+					<button class="btn sm">Обмен</button>
+				</li>
+				<li>
+					<span class="list-icon fx"><img src="img/ic-4.svg" alt="ic"></span>
+					<span class="list__heading">Galxe</span>
+					<span class="list__tag">20 REDY = $1</span>
+					<span class="list__text">Кампании Galxe позволяют вам получать бесплатные NFT, участвовать в
+						кампаниях с партнерами ReHold, а также конвертировать XP в REDY.</span>
+					<button class="btn sm btn-2">Узнать больше</button>
+				</li>
+				<li>
+					<span class="list-icon fx"><img src="img/ic-5.svg" alt="ic"></span>
+					<span class="list__heading">Реферальная программа</span>
+					<span class="list__tag">30% REDY</span>
+					<span class="list__text">5-уровневая реферальная программа позволяет вам получать 30% REDY ваших
+						друзей и их друзей за каждый Дуал, Обмен и Ежедневный квест.</span>
+				</li>
+			</ul>
+			<h4 class="subheading">Таблица лидеров</h4>
+			<p class="list__text">
+				В таблице лидеров будут показаны 25 лучших пользователей за неделю и 100 лучших за все время.
+			</p>
+			<table>
+				<thead>
+					<tr>
+						<th>Место</th>
+						<th>Адрес</th>
+						<th>Заработано</th>
+						<th>
+							Награда
+							<span class="info">
+								<i>
+									Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+								</i>
+							</span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td>0xc8a...6ae</td>
+						<td>22,016,180</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>0xfa4...c2f</td>
+						<td>13,033,820</td>
+						<td>90,000</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>0x438...bfc</td>
+						<td>2,221,390</td>
+						<td>80,000</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>0xe62...1b4</td>
+						<td>1,397,060</td>
+						<td>65,000</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+
+	</main>
+
+
+</body>
+
+</html>
