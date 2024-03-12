@@ -41,8 +41,9 @@ main
         border-radius: 50%
         line-height: 18px
         font-weight: 500
+
     img
-        margin-right: 8px
+        margin-right: 4px
         display: inline-block
         vertical-align: middle
 
@@ -92,3 +93,90 @@ main
     i
         opacity: .7
         font-style: normal
+
+.leaderboard
+    tbody
+        tr
+            &:first-of-type
+                td:first-of-type::before
+                    background: linear-gradient(rgb(255, 184, 0), rgb(226, 81, 0))
+
+            &:nth-of-type(2)
+                td:first-of-type::before
+                    background: linear-gradient(rgb(219, 219, 219), rgb(70, 70, 70))
+
+            &:nth-of-type(3)
+                td:first-of-type::before
+                    background: linear-gradient(rgb(184, 147, 104), rgb(144, 34, 0))
+
+        td
+            &:first-of-type::before
+                content: counter(custom-counter )
+                counter-increment: custom-counter
+                width: 32px
+                height: 32px
+                border-radius: 50%
+                display: inline-flex
+                align-items: center
+                justify-content: center
+                color: white
+                background: var(--secondary-03)
+
+            &:nth-of-type(3)
+                color: var(--primary-01)
+                padding-left: 21px
+                background-image: url('../img/td-1.svg')
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+
+            &:nth-of-type(4)
+                color: var(--secondary-03)
+                padding-left: 21px
+                background-image: url('../img/td-2.svg')
+
+.dual
+    .container
+
+    span
+        display: block
+
+    td, th
+        &:nth-of-type(2),
+        &:nth-of-type(3)
+            text-align: center
+
+    .btn
+        width: unset
+
+    table
+        padding: 0
+        .curr
+            opacity: .6
+
+        .fx
+            justify-content: flex-start
+            gap: 8px
+
+        tbody
+            tr:hover
+                background-color: var(--secondary-02)
+
+        .img
+            text-align: right
+            width: 60px
+            position: relative
+            z-index: 1
+            img
+                max-width: 38px
+                display: block
+                margin: 0 0 0 auto
+                border-radius: 50%
+                background-color: var(--background-01)
+                box-sizing: border-box
+                border: 3px solid var(--background-01)
+                &:first-of-type
+                    top: 1px
+                    position: absolute
+                    left: 0
+                    z-index: 11

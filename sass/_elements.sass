@@ -99,9 +99,6 @@ i
         font-size: 14px
         height: 40px
 
-    &.rd
-        border-radius: 32px
-
     &.sm
         height: 32px
         border-radius: 8px
@@ -110,9 +107,17 @@ i
         max-width: 260px
         margin: 0
 
+    &.rd
+        border-radius: 32px
+
+    &:hover
+        background: rgb(143, 255, 202)
+
     &-2
         color: white
         background: var(--secondary-01)
+        &:hover
+            background: rgb(134, 77, 247)
 
     &:disabled
         background: rgb(9, 102, 65)
@@ -198,48 +203,30 @@ table
         background-repeat: no-repeat
         background-position: center left
         background-size: 16px auto
-        &:first-of-type
-            // display: none
-
-        &:nth-of-type(3)
-            color: var(--primary-01)
-            padding-left: 21px
-            background-image: url('../img/td-1.svg')
-            white-space: nowrap
-            overflow: hidden
-            text-overflow: ellipsis
-
-        &:nth-of-type(4)
-            color: var(--secondary-03)
-            padding-left: 21px
-            background-image: url('../img/td-2.svg')
 
     tbody
         counter-reset: custom-counter
-        td:first-of-type::before
-            content: counter(custom-counter )
-            counter-increment: custom-counter
-            width: 32px
-            height: 32px
-            border-radius: 50%
-            display: inline-flex
-            align-items: center
-            justify-content: center
-            color: white
-            background: var(--secondary-03)
+        td
 
         tr
             &:first-of-type
                 border-top: 1px solid var(--secondary-02)
-                td:first-of-type::before
-                    background: linear-gradient(rgb(255, 184, 0), rgb(226, 81, 0))
 
-            &:nth-of-type(2)
-                td:first-of-type::before
-                    background: linear-gradient(rgb(219, 219, 219), rgb(70, 70, 70))
-            &:nth-of-type(3)
-                td:first-of-type::before
-                    background: linear-gradient(rgb(184, 147, 104), rgb(144, 34, 0))
+.tab
+    justify-content: flex-start
+    &__btn
+        font-weight: 500
+        color: var(--secondary-03)
+        padding: 8px
+        &:first-of-type
+            padding-left: 0
+
+        &:hover
+            font-weight: 300
+            opacity: .5
+        &:hover,
+        &.active
+            color: var(--primary-01)
 
 @media screen and ( min-width: 770px )
     body
@@ -248,7 +235,7 @@ table
 
     .container
         border-radius: 24px
-        max-width: 598px
+        max-width: 566px
         overflow: hidden
         background: var(--background-01)
         border-color: var(--secondary-02)

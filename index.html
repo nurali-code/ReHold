@@ -14,13 +14,13 @@
 
 <body>
 	<header class="header">
-		<div class="header-top fx fixed">
+		<div class="header-top fx">
 			<a href="./index.html" class="logo"><img src="img/logo.svg" alt="ig"></a>
 			<div class="header-col fx">
-				<button class="header-btn --redy">
+				<a href="./index.html" class="header-btn --redy">
 					<img src="img/redy.svg" alt="redy">
 					<i>redy</i>
-				</button>
+				</a>
 				<button class="header-btn --cur">
 					<img src="img/eth.svg" alt="redy">
 					<i>Ethereum</i>
@@ -33,22 +33,22 @@
 				</button>
 			</div>
 		</div>
-		<nav class="nav fx fixed">
-			<a href="#" class="nav__link">Дуал</a>
+		<nav class="nav fx">
+			<a href="./dual.html" class="nav__link">Дуал</a>
 			<a href="#" class="nav__link">Обмен</a>
 			<a href="#" class="nav__link">Купить</a>
 		</nav>
 	</header>
 
 	<main>
-		<div class="container airdrop">
+		<div class="container">
 			<h1 class="heading">Airdrop</h1>
 
 			<div class="earnings fx">
 				<div class="earnings-head">
 					<span class="earnings__heading">Всего заработано</span>
 					<span class="earnings__text">
-						<img src="img/redy.svg" alt="redy"> 0 redy
+						<img src="img/redy.svg" alt="redy"> 0 REDY
 					</span>
 				</div>
 				<div class="earnings-item">
@@ -128,7 +128,7 @@
 			<p class="list__text">
 				В таблице лидеров будут показаны 25 лучших пользователей за неделю и 100 лучших за все время.
 			</p>
-			<table>
+			<table class="leaderboard">
 				<thead>
 					<tr>
 						<th>Место</th>
@@ -169,14 +169,20 @@
 						<td>1,397,060</td>
 						<td>65,000</td>
 					</tr>
+					<tr>
+						<td></td>
+						<td>0x737...85b</td>
+						<td>93,400</td>
+						<td>65,000</td>
+					</tr>
 				</tbody>
 			</table>
 
 		</div>
-
 	</main>
 
-
+	<script src="./js/jquery-3.7.1.min.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>
