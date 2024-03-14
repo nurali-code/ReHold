@@ -228,6 +228,21 @@ table
         &.active
             color: var(--primary-01)
 
+.toggler
+    width: calc(15% + 12rem)
+    background: var(--secondary-02)
+    border-radius: 32px
+    position: relative
+    &__btn
+        color: var(--secondary-03)
+        border-radius: 32px
+        min-height: 35px
+        padding: 0 24px
+        width: 100%
+        &.active
+            color: white
+            background: var(--secondary-03)
+
 @media screen and ( min-width: 770px )
     body
         background: linear-gradient(180deg, var(--layout-01) 20.25%, var(--layout-02) 78.59%, var(--layout-03) 100%), url(../img/grid.svg) repeat-x var(--background-01) center top fixed
