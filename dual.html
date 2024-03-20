@@ -35,21 +35,22 @@
 		</div>
 		<nav class="nav fx">
 			<a href="./dual.html" class="nav__link active">Дуал</a>
-			<a href="#" class="nav__link">Обмен</a>
-			<a href="#" class="nav__link">Купить</a>
+			<a href="./swap.html" class="nav__link">Обмен</a>
+			<a href="./swap.html" class="nav__link">Купить</a>
 		</nav>
 	</header>
 
 	<main class="dual">
 		<div class="container">
 			<div class="tab fx">
-				<button class="tab__btn active">USDT</button>
-				<button class="tab__btn">USDC</button>
-				<button class="tab__btn">DAI</button>
-				<button class="tab__btn">EURC</button>
-				<button class="tab__btn">BTC</button>
-				<button class="tab__btn">ETH</button>
+				<button data-filter-btn="USDT" class="tab__btn active">USDT</button>
+				<button data-filter-btn="USDC" class="tab__btn">USDC</button>
+				<button data-filter-btn="DAI" class="tab__btn">DAI</button>
+				<button data-filter-btn="EURC" class="tab__btn">EURC</button>
+				<button data-filter-btn="BTC" class="tab__btn">BTC</button>
+				<button data-filter-btn="ETH" class="tab__btn">ETH</button>
 			</div>
+			
 			<table>
 				<thead>
 					<tr>
@@ -59,7 +60,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/pepe.svg" alt="pepe">
@@ -73,7 +74,7 @@
 						<td><img src="img/eth.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">460.62% <i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/M.png" alt="meme">
@@ -87,7 +88,7 @@
 						<td><img src="img/eth.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">460.62% <i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/shib.svg" alt="meme">
@@ -101,7 +102,7 @@
 						<td><img src="img/bsc.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">460.62% <i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/arb.svg" alt="meme">
@@ -115,7 +116,7 @@
 						<td><img src="img/arb.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">290.04%<i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/FLOKI.png" alt="meme">
@@ -129,7 +130,7 @@
 						<td><img src="img/eth.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">288.45% <i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/FLOKI.png" alt="meme">
@@ -143,7 +144,7 @@
 						<td><img src="img/bsc.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">254.40%<i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/sol.svg" alt="meme">
@@ -157,7 +158,7 @@
 						<td><img src="img/bsc.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">289.04%<i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/eth.svg" alt="meme">
@@ -171,7 +172,7 @@
 						<td><img src="img/op.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">239.83%<i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/avax.svg" alt="meme">
@@ -185,7 +186,7 @@
 						<td><img src="img/avax.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">249.28%<i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/avax.svg" alt="meme">
@@ -199,7 +200,7 @@
 						<td><img src="img/avax.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">249.28%<i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/avax.svg" alt="meme">
@@ -213,7 +214,7 @@
 						<td><img src="img/bsc.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">248.33%<i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/wbtc.svg" alt="meme">
@@ -227,7 +228,7 @@
 						<td><img src="img/op.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">247.47%<i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/matic.svg" alt="meme">
@@ -241,7 +242,7 @@
 						<td><img src="img/matic.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">246.25%<i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/wmatic.svg" alt="meme">
@@ -255,7 +256,7 @@
 						<td><img src="img/matic.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">246.25%<i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/weth.e.svg" alt="meme">
@@ -269,7 +270,7 @@
 						<td><img src="img/avax.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">245.80%<i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/weth.e.svg" alt="meme">
@@ -283,7 +284,7 @@
 						<td><img src="img/matic.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">245.70%<i>APR</i></button></td>
 					</tr>
-					<tr>
+					<tr data-filter="USDT">
 						<td class="fx">
 							<div class="img">
 								<img src="img/wbtc.svg" alt="meme">
@@ -296,6 +297,272 @@
 						</td>
 						<td><img src="img/eth.svg" alt="usdt"></td>
 						<td><button class="btn rd sm">244.47%<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="USDC">
+						<td class="fx">
+							<div class="img">
+								<img src="img/M.png" alt="meme">
+								<img src="img/usdc.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">MEME·USDC</span>
+								<span class="curr">0.044093</span>
+							</div>
+						</td>
+						<td><img src="img/eth.svg" alt="usdt"></td>
+						<td><button class="btn rd sm">441.77<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="USDC">
+						<td class="fx">
+							<div class="img">
+								<img src="img/pepe.svg" alt="meme">
+								<img src="img/usdc.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">MEME·PEPE</span>
+								<span class="curr">0.0...08910</span>
+							</div>
+						</td>
+						<td><img src="img/eth.svg" alt="usdt"></td>
+						<td><button class="btn rd sm">428.91%<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="USDC">
+						<td class="fx">
+							<div class="img">
+								<img src="img/shib.svg" alt="meme">
+								<img src="img/usdc.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">SHIB·PEPE</span>
+								<span class="curr">0.0...29000</span>
+							</div>
+						</td>
+						<td><img src="img/bsc.svg" alt="usdt"></td>
+						<td><button class="btn rd sm">310.57%<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="USDC">
+						<td class="fx">
+							<div class="img">
+								<img src="img/shib.svg" alt="meme">
+								<img src="img/usdc.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">SHIB·PEPE</span>
+								<span class="curr">0.0...29030</span>
+							</div>
+						</td>
+						<td><img src="img/eth.svg" alt="usdt"></td>
+						<td><button class="btn rd sm">309.17%<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="USDC">
+						<td class="fx">
+							<div class="img">
+								<img src="img/FLOKI.png" alt="meme">
+								<img src="img/usdc.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">FLOKI·PEPE</span>
+								<span class="curr">0.00025598</span>
+							</div>
+						</td>
+						<td><img src="img/bsc.svg" alt="usdt"></td>
+						<td><button class="btn rd sm">309.17%<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="USDC">
+						<td class="fx">
+							<div class="img">
+								<img src="img/sol.svg" alt="meme">
+								<img src="img/usdc.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">sol·PEPE</span>
+								<span class="curr">180.5700</span>
+							</div>
+						</td>
+						<td><img src="img/bsc.svg" alt="usdt"></td>
+						<td><button class="btn rd sm">296.66%<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="USDC">
+						<td class="fx">
+							<div class="img">
+								<img src="img/arb.svg" alt="meme">
+								<img src="img/usdc.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">sol·PEPE</span>
+								<span class="curr">1.8896</span>
+							</div>
+						</td>
+						<td><img src="img/arb.svg" alt="usdt"></td>
+						<td><button class="btn rd sm">266.15%<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="USDC">
+						<td class="fx">
+							<div class="img">
+								<img src="img/doge.svg" alt="meme">
+								<img src="img/usdc.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">DOGE·PEPE</span>
+								<span class="curr">0.16264</span>
+							</div>
+						</td>
+						<td><img src="img/bsc.svg" alt="usdt"></td>
+						<td><button class="btn rd sm">266.15%<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="USDC">
+						<td class="fx">
+							<div class="img">
+								<img src="img/op.svg" alt="meme">
+								<img src="img/usdc.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">op·PEPE</span>
+								<span class="curr">3.762</span>
+							</div>
+						</td>
+						<td><img src="img/bsc.svg" alt="usdt"></td>
+						<td><button class="btn rd sm">246.41%<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="DAI">
+						<td class="fx">
+							<div class="img">
+								<img src="img/op.svg" alt="meme">
+								<img src="img/dai.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">PEPE·DAI</span>
+								<span class="curr">0.0...08957</span>
+							</div>
+						</td>
+						<td><img src="img/eth.svg" alt="img"></td>
+						<td><button class="btn rd sm">441.01%<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="DAI">
+						<td class="fx">
+							<div class="img">
+								<img src="img/M.png" alt="meme">
+								<img src="img/dai.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">MEME·DAI</span>
+								<span class="curr">0.0...08957</span>
+							</div>
+						</td>
+						<td><img src="img/eth.svg" alt="img"></td>
+						<td><button class="btn rd sm">398.12%<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="DAI">
+						<td class="fx">
+							<div class="img">
+								<img src="img/shib.svg" alt="meme">
+								<img src="img/dai.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">shib·DAI</span>
+								<span class="curr">0.0...29168</span>
+							</div>
+						</td>
+						<td><img src="img/eth.svg" alt="img"></td>
+						<td><button class="btn rd sm">319.85% APR<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="DAI">
+						<td class="fx">
+							<div class="img">
+								<img src="img/FLOKI.png" alt="meme">
+								<img src="img/dai.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">FLOKI·DAI</span>
+								<span class="curr">0.00025759</span>
+							</div>
+						</td>
+						<td><img src="img/eth.svg" alt="img"></td>
+						<td><button class="btn rd sm">281.00% APR<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="DAI">
+						<td class="fx">
+							<div class="img">
+								<img src="img/FLOKI.png" alt="meme">
+								<img src="img/dai.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">LINK·DAI</span>
+								<span class="curr">19.5461</span>
+							</div>
+						</td>
+						<td><img src="img/eth.svg" alt="img"></td>
+						<td><button class="btn rd sm">237.08% APR<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="DAI">
+						<td class="fx">
+							<div class="img">
+								<img src="img/uni.svg" alt="meme">
+								<img src="img/dai.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">UNI·DAI</span>
+								<span class="curr">19.5461</span>
+							</div>
+						</td>
+						<td><img src="img/eth.svg" alt="img"></td>
+						<td><button class="btn rd sm">221.27% APR<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="DAI">
+						<td class="fx">
+							<div class="img">
+								<img src="img/op.svg" alt="meme">
+								<img src="img/dai.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">OP·DAI</span>
+								<span class="curr">19.5461</span>
+							</div>
+						</td>
+						<td><img src="img/op.svg" alt="img"></td>
+						<td><button class="btn rd sm">221.27% APR<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="DAI">
+						<td class="fx">
+							<div class="img">
+								<img src="img/eth.svg" alt="meme">
+								<img src="img/dai.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">eth·DAI</span>
+								<span class="curr">3705.40</span>
+							</div>
+						</td>
+						<td><img src="img/op.svg" alt="img"></td>
+						<td><button class="btn rd sm">204.83%<i>APR</i></button></td>
+					</tr>
+					<tr data-filter="DAI">
+						<td class="fx">
+							<div class="img">
+								<img src="img/weth.e.svg" alt="meme">
+								<img src="img/dai.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">ETH</span>
+								<span class="curr">3711.38</span>
+							</div>
+						</td>
+						<td><img src="img/arb.svg" alt="img"></td>
+						<td><button class="btn rd sm">204.58% <i>APR</i></button></td>
+					</tr>
+					<tr data-filter="DAI">
+						<td class="fx">
+							<div class="img">
+								<img src="img/weth.e.svg" alt="meme">
+								<img src="img/dai.svg" alt="USDC">
+							</div>
+							<div class="title">
+								<span class="text">weth·DAI</span>
+								<span class="curr">3706.88</span>
+							</div>
+						</td>
+						<td><img src="img/arb.svg" alt="img"></td>
+						<td><button class="btn rd sm">204.58% <i>APR</i></button></td>
 					</tr>
 				</tbody>
 			</table>
