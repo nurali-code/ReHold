@@ -143,6 +143,8 @@ main
         display: block
 
     td, th
+        position: relative
+        z-index: 1
         &:nth-of-type(2),
         &:nth-of-type(3)
             text-align: center
@@ -188,28 +190,64 @@ main
                     left: 0
                     z-index: 11
 
-    .css-iytt15, .css-1co4be0
-        display: flex
+    .css
+        &-iytt15,
+        &-1co4be0
+            display: flex
 
-    .css-ynd4pf
-        padding: 0px 16px
-        vertical-align: middle
-        align-items: center
-        background: var(--primary-01)
-        cursor: pointer
-        display: inline-flex
-        justify-content: center
-        transition: all 0.2s ease 0s
-        font-size: 16px
-        font-weight: 500
-        color: var(--black-01)
-        overflow-wrap: break-word
-        margin: 0
+        &-ynd4pf
+            padding: 0px 16px
+            vertical-align: middle
+            align-items: center
+            background: var(--primary-01)
+            cursor: pointer
+            display: inline-flex
+            justify-content: center
+            transition: all 0.2s ease 0s
+            font-size: 16px
+            font-weight: 500
+            color: var(--black-01)
+            overflow-wrap: break-word
+            margin: 0
+            height: 32px
+            border-radius: 32px
+            font-size: 14px
+            margin: 0
+            i
+                margin-left: 5px
 
-        height: 32px
-        border-radius: 32px
-        font-size: 14px
-        margin: 0
+            @media screen and ( max-width: 700px )
+                i
+                    display: none
+
+        &-iytt15
+            width: 60px
+
+        &-6z8hzk,
+        &-3eqf1r
+            border-radius: 50%
+            background-color: #fff
+            box-sizing: border-box
+            border: 3px solid var(--background-01)
+            img
+                display: block
+
+        &-3eqf1r
+            position: relative
+            right: 14px
+            z-index: -1
+
+        &-iytt15
+            margin-right: 8px
+
+        &-188k1iq
+            opacity: .6
+
+    tr
+        display: none
+
+    [data-id="USDT"]
+        display: table-row
 
 .swap
     .btn

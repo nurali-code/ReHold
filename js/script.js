@@ -6,9 +6,9 @@ $(window).scroll(function () {
 $('.tab__btn').on('click', function (e) {
     $('.tab__btn').removeClass('active');
     $(this).addClass('active');
-    const trId = $(this).attr('data-filter-btn');
+    const trId = $(this).attr('data-filter');
     $('.dual tbody tr').fadeOut()
-    $('[data-filter=' + trId + ']').fadeIn()
+    $('[data-id=' + trId + ']').css('display', 'table-row')
 
 });
 $('a[href*="#"]').on('click', function (e) {
